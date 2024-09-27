@@ -1,2 +1,2 @@
 # parcial-web
-**Autor:** Daniel Fuentes Ensuncho, **Codigo:**202210839
+**Autor:** Daniel Fuentes Ensuncho, **Codigo:** 202210839
