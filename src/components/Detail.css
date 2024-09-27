@@ -1,0 +1,15 @@
+.robot-details {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .robot-details p {
+    margin: 5px 0;
+  }
+  
+  .robot-details strong {
+    font-weight: bold;
+  }
+  

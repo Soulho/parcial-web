@@ -1,0 +1,28 @@
+.robots-container {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .robots-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .robots-table th, 
+  .robots-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .robots-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .robots-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
