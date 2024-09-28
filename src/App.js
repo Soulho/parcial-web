@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import {FormattedMessage} from 'react-intl' ;
 
 function App() {
   const [formValues, setFormValues] = useState({
@@ -60,7 +61,7 @@ function App() {
           if (response.status === 200) {
             return response.json(); // Parseamos la respuesta
           } else if (response.status === 401) {
-            throw new Error("Credenciales incorrectas");
+            throw new Error("Error de autenticación. Revise sus credenciales");
           } else {
             throw new Error("Error desconocido");
           }
@@ -88,50 +89,37 @@ function App() {
 
       <Form className="form-container">
         <Form.Group className="mb-6" controlId="formBasicUserName">
-          <Form.Label>Nombre de usuario</Form.Label>
+          <Form.Label><FormattedMessage id="Username"/></Form.Label>
           <Form.Control
             type="text"
-            placeholder="Ingresa tu nombre de usuario"
             onChange={handleUserChange}
             value={formValues.userName}
             isInvalid={!validationStates.userNameState}
           />
-          {!validationStates.userNameState && (
-            <Form.Text className="text-danger">
-              El nombre de usuario no puede estar vacío.
-            </Form.Text>
-          )}
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Contraseña</Form.Label>
+          <Form.Label><FormattedMessage id="Password"/></Form.Label>
           <Form.Control
             type="password"
-            placeholder="Contraseña"
             onChange={handlePasswordChange}
             value={formValues.password}
             isInvalid={!validationStates.passwordState}
           />
-          {!validationStates.passwordState && (
-            <Form.Text className="text-danger">
-              La contraseña no puede estar vacía.
-            </Form.Text>
-          )}
         </Form.Group>
 
         <div className="button-group">
           <Button id="login" variant="primary" onClick={clickSubmit}>
-            Ingresar
+          <FormattedMessage id="Join"/>
           </Button>
           <Button id="cancel" variant="danger" onClick={() => setFormValues({ userName: '', password: '' })}>
-            Cancelar
+          <FormattedMessage id="Cancel"/>
           </Button>
         </div>
 
-        {/* Mostrar mensaje de error si las credenciales son incorrectas */}
         {errorMessage && (
           <div className="error-message">
-            {errorMessage}
+            <strong><FormattedMessage id="Authentication error. Please check your credentials"/></strong>
           </div>
         )}
       </Form>
