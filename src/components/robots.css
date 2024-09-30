@@ -5,9 +5,10 @@
   
   .robots-table {
     width: 100%;
-    max-width: 800px;
+    max-width: 1500px;
     margin: 0 auto;
     border-collapse: collapse;
+    margin-top: 13px;
   }
   
   .robots-table th, 
@@ -26,3 +27,26 @@
     background-color: #f2f2f2;
   }
   
+  .footer-section {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #000000;
+  }
+  
+  .footer-section p {
+    margin: 35px;
+    background-color: white;
+  }
+
+  .row{
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 10%;
+    text-shadow: 0px 3px 10px rgb(136, 136, 136); 
+    color: #000000;
+  }

@@ -1,13 +1,122 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.login-form, .card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.login-header {
+  width: 100%;
+  height: auto;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px; /* Ajustamos el tamaño a 300px */
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.buttons button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+.root {
+  width: 100vw; /* 100% del ancho de la ventana */
+  margin: 0; /* Remueve cualquier margen */
+  padding: 0; /* Remueve cualquier padding */
+  box-sizing: border-box; /* Asegura que el padding y border se incluyan dentro del width */
+  background: white;
 }

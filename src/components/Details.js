@@ -46,13 +46,13 @@ const Detail = ({ robotId }) => {
   
 
   return (
-    <div className="robot-details">
-      <h2>{robot.nombre}</h2>
-      <img src={imageUrl} style={{ width: '300px', height: '300px' }} />
-      <p><strong><FormattedMessage id="Year of manufacture"/></strong> {robot.añoFabricacion}</p>
-      <p><strong><FormattedMessage id="Processing capacity"/></strong> {robot.capacidadProcesamiento}</p>
-      <p><strong><FormattedMessage id="Mood"/></strong> {robot.humor}</p>
-    </div>
+      <div className="robot-detail-card">
+            <h3 className="robot-name">{robot.nombre}</h3>
+            <img className='robot-image' src={imageUrl} style={{ width: '200px', height: '200px' }} />
+            <p className="robot-detail"><strong><FormattedMessage id="Year of manufacture"/></strong> {robot.añoFabricacion}</p>
+          <p className="robot-detail"><strong><FormattedMessage id="Processing capacity"/></strong> {robot.capacidadProcesamiento}</p>
+          <p className="robot-detail"><strong><FormattedMessage id="Mood"/></strong> {robot.humor}</p>
+        </div>
   );
 };
 

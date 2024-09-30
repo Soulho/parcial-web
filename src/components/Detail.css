@@ -1,15 +1,41 @@
-.robot-details {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .robot-details p {
-    margin: 5px 0;
-  }
-  
-  .robot-details strong {
-    font-weight: bold;
-  }
-  
+.robot-detail-card {
+  margin-top: 13px;
+  width: 65%;
+  background-color: #D9D9D980;
+  border: 2px solid #767676;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto;
+}
+
+.robot-name {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0; 
+  margin-bottom: 5px;
+}
+
+.robot-image {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+  border: 2px solid #767676;
+  margin-bottom: 20px;
+}
+
+.robot-detail {
+  font-size: 1rem;
+  margin-bottom: 0px;
+  color: #000000;
+}
+
+.robot-detail strong {
+  font-weight: bold;
+  color: #000000;
+}
+.root{
+  background-color: white;
+}

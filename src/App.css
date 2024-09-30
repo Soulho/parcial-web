@@ -15,7 +15,6 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .container img {
@@ -32,8 +31,16 @@ h1 {
 }
 
 .form-container {
-  width: 625px;height: 369px;top: 512px;left: 417px;padding: 2px 0px 0px 25px;gap: 0px;opacity: 0px;
-  margin-top: 20px;
+  width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    color: #000000;
+    background-color: transparent; 
+    border: none;  
+}
+
+.form-control{
+  background-color: #D9D9D9;
 }
 
 input[type="text"],
@@ -57,6 +64,7 @@ button {
   cursor: pointer;
 }
 
+
 button#login {
   background-color: #004a97;
   color: white;
@@ -77,3 +85,20 @@ button:hover {
   color: red;
 }
 
+.footer-section {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #000000;
+}
+
+.footer-section p {
+  margin: 35px;
+}
+
+.app{
+    width: 100vw; /* 100% del ancho de la ventana */
+    margin: 0; /* Remueve cualquier margen */
+    padding: 0; /* Remueve cualquier padding */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan dentro del width */
+}

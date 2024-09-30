@@ -82,6 +82,7 @@ function App() {
   };
 
   return (
+    <>
     <div className='App'>
       <NavBar></NavBar>
       <div className="container">
@@ -95,6 +96,7 @@ function App() {
             onChange={handleUserChange}
             value={formValues.userName}
             isInvalid={!validationStates.userNameState}
+            style={{ backgroundColor: '#D9D9D9' }}
           />
         </Form.Group>
 
@@ -105,10 +107,11 @@ function App() {
             onChange={handlePasswordChange}
             value={formValues.password}
             isInvalid={!validationStates.passwordState}
+            style={{ backgroundColor: '#D9D9D9' }}
           />
         </Form.Group>
 
-        <div className="button-group">
+        <div className="button-group d-flex" style={{ gap: '50px' }}>
           <Button id="login" variant="primary" onClick={clickSubmit}>
           <FormattedMessage id="Join"/>
           </Button>
@@ -125,7 +128,10 @@ function App() {
       </Form>
     </div>
     </div>
-    
+    <footer className="footer-section">
+    <p>Contact us: +57 3102105253 - info@robot-lovers.com - @robot-lovers</p>
+    </footer>
+    </>
   );
 }
 

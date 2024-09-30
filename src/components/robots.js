@@ -1,8 +1,8 @@
-import NavBar from "./NavBar";
 import React, { useState, useEffect } from 'react';
 import './robots.css';
 import Detail from './Details';
 import {FormattedMessage} from 'react-intl' ;
+import header from './panel grande.png';
 
 const Robots = () => {
   const [robots, setRobots] = useState([]);
@@ -28,13 +28,15 @@ const Robots = () => {
   };
 
   return (
+    <>
     <div>
-        <NavBar></NavBar>
+    <h1> <FormattedMessage id="Adopt a Robot with Robot Lovers!"/></h1>
+      <img src={header} alt="Robots Header" />
         <div className="row">
       {/* Columna izquierda con la tabla de robots */}
       <div className="col left-col">
-        <table className="robots-table">
-          <thead>
+        <table className="table">
+          <thead class="table-dark">
             <tr>
               <th>ID</th>
               <th><FormattedMessage id="Name"/></th>
@@ -61,6 +63,11 @@ const Robots = () => {
       </div>
     </div>
     </div>
+    
+    <footer className="footer-section">
+      <p>Contact us: +57 3102105253 - info@robot-lovers.com - @robot-lovers</p>
+    </footer>
+    </>
     
   );
 };
